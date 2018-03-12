@@ -6,10 +6,18 @@
 
 BTree::BTree() = default;
 
-BTreeNode *BTree::getRootNode() {
+BTreeNode *BTree::GetRootNode() {
     return rootNode;
 }
 
-void BTree::setRootNode(BTreeNode *rootNode) {
+void BTree::SetRootNode(BTreeNode *rootNode) {
     this->rootNode = rootNode;
+}
+
+BTreeNode *BTree::Search(int key) {
+    if (rootNode == nullptr) {
+        return nullptr;
+    }
+
+    return rootNode->Search(key);
 }

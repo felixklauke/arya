@@ -7,3 +7,7 @@
 BTreeNode::BTreeNode(bool isLeaf) : leaf(isLeaf) {
 
 }
+
+BTreeNode *BTreeNode::Search(int key) {
+    return nullptr;
+}

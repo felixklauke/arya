@@ -16,6 +16,7 @@ private:
 public:
     explicit BTreeNode(bool leaf);
 
+    BTreeNode *Search(int key);
 };
 
 
