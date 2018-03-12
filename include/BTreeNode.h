@@ -8,6 +8,14 @@
 
 class BTreeNode {
 
+private:
+    int keys[];
+    BTreeNode children[];
+    bool leaf;
+
+public:
+    explicit BTreeNode(bool leaf);
+
 };
 
 
