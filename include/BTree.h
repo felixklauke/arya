@@ -16,9 +16,11 @@ private:
 public:
     BTree();
 
-    BTreeNode *getRootNode();
+    BTreeNode *GetRootNode();
 
-    void setRootNode(BTreeNode *rootNode);
+    void SetRootNode(BTreeNode *rootNode);
+
+    BTreeNode *Search(int key);
 };
 
 
