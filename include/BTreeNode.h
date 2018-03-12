@@ -6,11 +6,13 @@
 #define ARYA_BTREENODE_H
 
 
+#include <vector>
+
 class BTreeNode {
 
 private:
-    int keys[];
-    BTreeNode children[];
+    std::vector<int> keys;
+    std::vector<BTreeNode> children;
     bool leaf;
 
 public:
